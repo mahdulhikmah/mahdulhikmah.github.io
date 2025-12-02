@@ -1,2 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mahdul Hikmoh Citadel of Arabic & Islamic Studies</title>
+  <meta name="description" content="Excellence in Islamic and Western Education | Established 2006 | Ikorodu, Lagos"/>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Poppins:wght@300;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <style>
+    body { font-family: 'Poppins', sans-serif; }
+    .amiri { font-family: 'Amiri', serif; }
+    .bg-islamic { background: linear-gradient(135deg, #1e3a2f, #2d6a4f); }
+    .text-gold { color: #d4af37; }
+    .btn-primary { background: #d4af37; color: #1e3a2f; transition: all 0.3s; }
+    .btn-primary:hover { background: #f1c40f; transform: translateY(-3px); }
+  </style>
+</head>
+<body class="text-gray-800">
 
-ello wh
+  <!-- Navbar -->
+  <nav class="bg-white shadow-lg fixed w-full z-50 top-0">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between h-16">
+        <div class="flex items-center">
+          <img src="https://via.placeholder.com/60x60/1e3a2f/ffffff?text=MH" alt="Logo" class="h-12 w-12 rounded-full">
+          <span class="ml-3 text-2xl font-bold text-[#1e3a2f] amiri">Mahdul Hikmoh</span>
+        </div>
+        <div class="hidden md:flex items-center space-x-8">
+          <a href="#home" class="hover:text-[#d4af37] transition">Home</a>
+          <a href="#about" class="hover:text-[#d4af37] transition">About</a>
+          <a href="#programs" class="hover:text-[#d4af37] transition">Programs</a>
+          <a href="#achievements" class="hover:text-[#d4af37] transition">Achievements</a>
+          <a href="#contact" class="hover:text-[#d4af37] transition">Contact</a>
+        </div>
+        <div class="md:hidden flex items-center">
+          <button class="mobile-menu-button">
+            <i class="fas fa-bars text-2xl text-[#1e3a2f]"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- Mobile Menu -->
+    <div class="mobile-menu hidden bg-white shadow-md">
+      <a href="#home" class="block py-2 px-4 hover:bg-gray-100">Home</a>
+      <a href="#about" class="block py-2 px-4 hover:bg-gray-100">About</a>
+      <a href="#programs" class="block py-2 px-4 hover:bg-gray-100">Programs</a>
+      <a href="#achievements" class="block py-2 px-4 hover:bg-gray-100">Achievements</a>
+      <a href="#contact" class="block py-2 px-4 hover:bg-gray-100">Contact</a>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="bg-islamic text-white pt-20 pb-32">
+    <div class="max-w-7xl mx-auto px-6 text-center">
+      <h1 class="text-4xl md:text-6xl font-bold amiri leading-tight">
+        Mahdul Hikmoh Citadel of Arabic & Islamic Studies
+      </h1>
+      <p class="mt-6 text-lg md:text-xl max-w-3xl mx-auto">
+        Excellence in Islamic Education & Character Building Since 2006
+      </p>
+      <div class="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="#contact" class="btn-primary px-8 py-4 rounded-full font-semibold shadow-lg text-lg">
+          Enroll Now
+        </a>
+        <a href="#about" class="border-2 border-white px-8 py-4 rounded-full font-semibold hover:bg-white hover:text-[#1e3a2f] transition">
+          Learn More
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About / History -->
+  <section id="about" class="py-20 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-6">
+      <h2 class="text-4xl font-bold text-center text-[#1e3a2f] amiri mb-12">Our Journey Since 2006</h2>
+      <div class="grid md:grid-cols-3 gap-10 text-center">
+        <div class="bg-white p-8 rounded-xl shadow-lg">
+          <i class="fas fa-mosque text-5xl text-[#d4af37] mb-4"></i>
+          <h3 class="text-2xl font-bold text-[#1e3a2f]">2006</h3>
+          <p class="mt-4">Founded at Orile Iganmu with just 5 students as night classes</p>
+        </div>
+        <div class="bg-white p-8 rounded-xl shadow-lg">
+          <i class="fas fa-home text-5xl text-[#d4af37] mb-4"></i>
+          <h3 class="text-2xl font-bold text-[#1e3a2f]">2011</h3>
+          <p class="mt-4">Relocated to permanent site at Agric, Ikorodu</p>
+        </div>
+        <div class="bg-white p-8 rounded-xl shadow-lg">
+          <i class="fas fa-graduation-cap text-5xl text-[#d4af37] mb-4"></i>
+          <h3 class="text-2xl font-bold text-[#1e3a2f]">2014 – Present</h3>
+          <p class="mt-4">Renamed Mahdul Hikmoh + Integration of Western Education & ICT</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Programs -->
+  <section id="programs" class="py-20">
+    <div class="max-w-7xl mx-auto px-6 text-center">
+      <h2 class="text-4xl font-bold text-[#1e3a2f] amiri mb-12">Our Programs</h2>
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div class="bg-white p-8 rounded-lg shadow-xl hover:shadow-2xl transition">
+          <i class="fas fa-book-open text-4xl text-[#d4af37] mb-4"></i>
+          <h3 class="text-xl font-bold">Qur’an & Tajweed</h3>
+        </div>
+        <div class="bg-white p-8 rounded-lg shadow-xl hover:shadow-2xl transition">
+          <i class="fas fa-pray text-4xl text-[#d4af37] mb-4"></i>
+          <h3 class="text-xl font-bold">Fiqh & Sunnah</h3>
+        </div>
+        <div class="bg-white p-8 rounded-lg shadow-xl hover:shadow-2xl transition">
+          <i class="fas fa-language text-4xl text-[#d4af37] mb-4"></i>
+          <h3 class="text-xl font-bold">Arabic Language</h3>
+        </div>
+        <div class="bg-white p-8 rounded-lg shadow-xl hover:shadow-2xl transition">
+          <i class="fas fa-laptop-code text-4xl text-[#d4af37] mb-4"></i>
+          <h3 class="text-xl font-bold">Computer & ICT</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Achievements -->
+  <section id="achievements" class="py-20 bg-gray-100">
+    <div class="max-w-7xl mx-auto px-6 text-center">
+      <h2 class="text-4xl font-bold text-[#1e3a2f] amiri mb-12">Proud Alumni & Achievements</h2>
+      <p class="text-lg max-w-4xl mx-auto mb-10">
+        Our graduates are excelling in top universities across Nigeria: UNILAG, LASU, Kwara Poly, YabaTech, Open University, and many more.
+        Many have won national Qur’an competitions and are leaders in their fields.
+      </p>
+      <div class="flex justify-center">
+        <img src="https://via.placeholder.com/800x400/1e3a2f/ffffff?text=Graduates+&+Awards" alt="Alumni" class="rounded-lg shadow-2xl">
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact & Footer -->
+  <section id="contact" class="bg-islamic text-white py-20">
+    <div class="max-w-7xl mx-auto px-6 text-center">
+      <h2 class="text-4xl font-bold amiri mb-8">Visit or Contact Us</h2>
+      <p class="text-xl mb-6">22 Kareem Agbriogan Street, Agric, Ikorodu, Lagos State</p>
+      <div class="flex justify-center space-x-8 text-3xl mb-10">
+        <a href="#" class="hover:text-[#d4af37]"><i class="fab fa-whatsapp"></i></a>
+        <a href="#" class="hover:text-[#d4af37]"><i class="fab fa-facebook"></i></a>
+        <a href="#" class="hover:text-[#d4af37]"><i class="fas fa-envelope"></i></a>
+      </div>
+      <a href="tel:+234" class="btn-primary px-10 py-4 rounded-full text-lg font-bold">
+        Call: +234 ___ ___ ____
+      </a>
+    </div>
+  </section>
+
+  <footer class="bg-[#1e3a2f] text-white py-8 text-center">
+    <p>&copy; 2025 Mahdul Hikmoh Citadel of Arabic & Islamic Studies. All rights reserved.</p>
+    <p class="mt-2 amiri text-gold">جَزَاكُمُ اللَّهُ خَيْرًا</p>
+  </footer>
+
+  <script>
+    // Mobile menu toggle
+    const btn = document.querySelector(".mobile-menu-button");
+    const menu = document.querySelector(".mobile-menu");
+    btn.addEventListener("click", () => {
+      menu.classList.toggle("hidden");
+    });
+
+    // Smooth scrolling
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
+</body>
+</html>
