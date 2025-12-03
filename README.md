@@ -1,25 +1,453 @@
-# Mahdul Hikmoh Citadel of Arabic & Islamic Studies  
-**Official Website** – Live: https://mahdulhikmah.github.io
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sunshine Public School</title>
+  <meta name="description" content="Welcome to Sunshine Public School - Nurturing Future Leaders"/>
 
-**Established 2006 • Ikorodu, Lagos • Excellence in Islamic & Modern Education**
+  <!-- Swiper.js CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 
-### Our Journey
-- **2006** – Started as night classes with only 5 students (Orile Iganmu)  
-- **2011** – Moved to permanent site: 22 Kareem Agbriogan Street, Agric, Ikorodu  
-- **2014 – Present** – Renamed *Mahdul Hikmoh* + added Western education & ICT training  
+  <style>
+    :root {
+      --primary: #1e40af;
+      --secondary: #f59e0b;
+      --light: #f3f4f6;
+      --dark: #1f2937;
+      --success: #10b981;
+    }
 
-### Programs
-- Qur’an Memorization & Tajweed  
-- Arabic Language  
-- Fiqh & Authentic Sunnah  
-- Computer & ICT Studies  
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-### Proud Alumni
-Our graduates are excelling in UNILAG, LASU, YabaTech, Kwara Poly, Open University and many more. Many have won national Qur’an competitions.
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      color: var(--dark);
+    }
 
-### Visit Us
-22 Kareem Agbriogan Street, Agric, Ikorodu, Lagos State  
-WhatsApp / Call: +234 __________  
+    a { text-decoration: none; color: inherit; }
 
-**جَزَاكُمُ اللَّهُ خَيْرًا**  
-May Allah make this institution a source of continuous reward for all who support it. Ameen.
+    img { max-width: 100%; display: block; }
+
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 15px;
+    }
+
+    /* Header & Navigation */
+    header {
+      background: var(--primary);
+      color: white;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+
+    .header-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 0;
+    }
+
+    .logo {
+      font-size: 1.8rem;
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+      gap: 12px; /* slightly increased for logo */
+    }
+
+    .logo img {
+      height: 50px;        /* Logo size */
+      width: auto;
+      border-radius: 8px;  /* optional: rounded corners */
+    }
+
+    .logo span {
+      color: var(--secondary);
+    }
+
+    nav ul {
+      display: flex;
+      list-style: none;
+      gap: 2rem;
+    }
+
+    nav a {
+      color: white;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: var(--secondary);
+    }
+
+    .menu-toggle {
+      display: none;
+      font-size: 1.5rem;
+      cursor: pointer;
+    }
+
+    /* Hero Section (Welcome) */
+    #welcome {
+      padding: 120px 0 80px;
+      background: linear-gradient(rgba(13, 60, 214, 0.8), rgba(222, 242, 243, 0.9)), url('images/logo.jpg') center/cover no-repeat;
+      color: white;
+      text-align: center;
+    }
+
+    #welcome h1 {
+      font-size: 3.5rem;
+      margin-bottom: 1rem;
+    }
+
+    #welcome p {
+      font-size: 1.3rem;
+      max-width: 800px;
+      margin: 0 auto 2rem;
+    }
+
+    .btn {
+      display: inline-block;
+      background: var(--secondary);
+      color: white;
+      padding: 12px 30px;
+      border-radius: 50px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: #d97706;
+      transform: translateY(-3px);
+    }
+
+    /* Sections */
+    section {
+      padding: 80px 0;
+    }
+
+    h2 {
+      text-align: center;
+      font-size: 2.5rem;
+      margin-bottom: 3rem;
+      color: var(--primary);
+    }
+
+    /* About */
+    #about {
+      background: var(--light);
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 3rem;
+      text-align: center;
+    }
+
+    .about-card {
+      background: white;
+      padding: 2rem;
+      border-radius: 15px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    }
+
+    .about-card i {
+      font-size: 3rem;
+      color: var(--secondary);
+      margin-bottom: 1rem;
+    }
+
+    /* Gallery with Swiper Carousel */
+    #gallery {
+      background: #f9fafb;
+    }
+
+    .swiper {
+      padding: 20px 0 50px;
+      border-radius: 15px;
+      overflow: hidden;
+    }
+
+    .swiper-slide {
+      background: white;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+
+    .swiper-slide:hover {
+      transform: scale(1.05);
+    }
+
+    .swiper-slide img {
+      height: 300px;
+      object-fit: cover;
+    }
+
+    .swiper-pagination-bullet-active {
+      background: var(--primary);
+    }
+
+    /* Contact */
+    #contact {
+      background: var(--light);
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 3rem;
+    }
+
+    .contact-info i {
+      color: var(--secondary);
+      font-size: 1.5rem;
+      margin-right: 10px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      font-family: inherit;
+    }
+
+    /* Footer */
+    footer {
+      background: var(--dark);
+      color: white;
+      text-align: center;
+      padding: 3rem 0;
+    }
+
+    .social-links a {
+      font-size: 1.5rem;
+      margin: 0 10px;
+      color: #aaa;
+      transition: color 0.3s;
+    }
+
+    .social-links a:hover {
+      color: var(--secondary);
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .menu-toggle { display: block; }
+      
+      nav ul {
+        position: fixed;
+        top: 70px;
+        left: -100%;
+        background: var(--primary);
+        width: 100%;
+        height: calc(100vh - 70px);
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+        padding-top: 3rem;
+        transition: 0.3s;
+      }
+
+      nav ul.show {
+        left: 0;
+      }
+
+      #welcome h1 { font-size: 2.5rem; }
+      #welcome p { font-size: 1.1rem; }
+      
+      .logo img {
+        height: 40px; /* slightly smaller on mobile */
+      }
+    }
+  </style>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="container header-inner">
+      <div class="logo">
+        <!-- SCHOOL LOGO ADDED HERE -->
+        <img src="images/logo.jpg" alt="School Logo">
+        Mahdul <span>Hikmah</span>
+      </div>
+      <nav>
+        <div class="menu-toggle" id="mobile-menu">
+          <i class="fas fa-bars"></i>
+        </div>
+        <ul id="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  
+   
+
+  
+
+  <!-- Welcome Section -->
+  <section id="welcome">
+    <div class="container">
+      <h1>Welcome to Mahdul Hikmoh Citadel of Arabic and Islamic Studies</h1>
+      <p>Empowering young minds with quality education, values, and opportunities for a brighter future.</p>
+      <a href="#about" class="btn">Explore More</a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+   
+  <section id="about">
+    <div class="container">
+      <h2>About Our School</h2>
+      <div class="about-grid">
+        <div class="about-card">
+          <i class="fas fa-book-open"></i>
+          <h3>Quality Education</h3>
+          <p>The only legacy you can give your child/ward is knowledge of Al-Qur'an, Sunna of Phophet Muhammed (SAW) and western education. With Mahdul Hikmoh that is a sure gruaranty</p>
+        </div>
+        <div class="about-card">
+          <i class="fas fa-trophy"></i>
+          <h3>Our Motto</h3>
+          <p>Wisdom is the lost property of the believer, wherever he finds it, he is most entitle to it.</p>
+        </div>
+        <div class="about-card">
+          <i class="fas fa-users"></i>
+          <h3>Community</h3>
+          <p>A supportive environment that nurtures leadership and teamwork according to Shariah and Sunna.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+ 
+
+  <!-- What people say -->
+  <section id="about">
+    <div class="container">
+      <h2>Our Client</h2>
+      <div class="about-grid">
+        <div class="about-card">
+          <i class="fas fa-book-open"></i>
+          <h3>Mommy Muiz</h3>
+          <p> This is by far the best Islamic & Arabic School i knew</p>
+        </div>
+        <div class="about-card">
+          <i class="fas fa-trophy"></i>
+          <h3>Abdul Quyum</h3>
+          <p>For Islamic studies just bring your child/ward amd a living testimony.</p>
+        </div>
+        <div class="about-card">
+          <i class="fas fa-users"></i>
+          <h3>Alh. Sulaiman</h3>
+          <p>I love the fact that the teacher of this school are all schoolar both Islamic and Western educations.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+ 
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <h3>Get in Touch</h3>
+          <p><i class="fas fa-map-marker-alt"></i> 22, Kareem Agboriogan Street, Igbo-Olomu, Agric, Ikorodu, Lagos Nigeria</p>
+          <p><i class="fas fa-phone"></i> +2348102904548, +2348126062463, +2347081433071</p>
+          <p><i class="fas fa-envelope"></i> INFO@MAHDULHIKMOH.EDU.NG </p>
+          <p><i class="fas fa-clock"></i> Mon - Thur: 5:00 PM - 6:30 PM</p>
+          <p><i class="fas fa-clock"></i> Sat - Sun: 10:30 AM - 1:30 PM</p>
+        </div>
+        
+        <div class="contact-form">
+          <h3>Send Message</h3>
+          <form>
+            <input type="text" placeholder="Your Name" required />
+            <input type="email" placeholder="Your Email" required />
+            <input type="text" placeholder="Subject" required />
+            <textarea rows="5" placeholder="Your Message" required></textarea>
+            <button type="submit" class="btn">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Mahdul Hikmoh Citadel of Arabic & Islamic Studies. All rights reserved.</p>
+      <div class="social-links">
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Swiper.js -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  
+  <script>
+    // Mobile Menu Toggle
+    const mobileMenu = document.getElementById('mobile-menu');
+    const navLinks = document.getElementById('nav-links');
+
+    mobileMenu.addEventListener('click', () => {
+      navLinks.classList.toggle('show');
+      mobileMenu.querySelector('i').classList.toggle('fa-bars');
+      mobileMenu.querySelector('i').classList.toggle('fa-times');
+    });
+
+    // Swiper Carousel Initialization
+    const swiper = new Swiper(".mySwiper", {
+      slidesPerView: 1,
+      spaceBetween: 20,
+      loop: true,
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      breakpoints: {
+        640: { slidesPerView: 2 },
+        968: { slidesPerView: 3 }
+      }
+    });
+  </script>
+</body>
+</html>
